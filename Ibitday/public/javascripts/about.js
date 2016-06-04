@@ -6,3 +6,11 @@ elfApp.controller('AboutController', function($scope) {
     $scope.description = 'AboutController Data';
 
 });
+
+elfApp.directive('elfAboutDescription', function() {
+    'use strict';
+    return {
+        controller: 'AboutController',
+        templateUrl: 'about-controller'
+    };
+});
